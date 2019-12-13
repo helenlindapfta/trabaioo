@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase CRUD Javascript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>Trabalho de modelagem e Banco de Dados
+        <br/><small><em>Crud com o Realtime Database</em></small>
+    </h1>
+
+
+    <!-- add usuario modulo -->
+    <section id="adicionar-usuario-modulo" >
+        <button id="abrir-adicionar-usuario-form-btn">+</button>
+        <form>
+            <h2>Adicionar Usuário</h2>
+            Nome:<br>
+            <input type='text' data-key='Nome' class='usuario-input'><br>
+            Idade:<br>
+            <input type='text' data-key='Idade' class='usuario-input'><br>
+            Email:<br>
+            <input type='text' data-key='Email' class='usuario-input'><br>
+            <button type='button' id="adicionar-usuario-btn">Adicionar</button>
+        </form>
+    </section>
+
+    <!-- edit usuario modulo -->
+    <section id="editar-usuario-modulo">
+        <form>
+            <h2>Editar Usuário</h2>
+            <input type="hidden" class="editar-usuarioid">
+            Nome:<br>
+            <input type='text' data-key='Nome' class='editar-usuario-input'><br>
+            Idade:<br>
+            <input type='text' data-key='Idade' class='editar-usuario-input'><br>
+            Email:<br>
+            <input type='text' data-key='Email' class='editar-usuario-input'><br>
+            <button type='button' id="editar-usuario-btn">Salvar</button>
+        </form>
+    </section>
+
+
+    <!-- show usuario modulo -->
+    <ul id="usuario-lista"></ul>
+    <div id="usuario-detalhes"></div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,155 @@
+h1, h2 {
+ margin:0;
+ padding:0;
+}
+body {
+ background:#ffffff;
+ font-family: Arial, sans-serif;
+ 
+ padding: 5px;
+ padding-right: 5px;
+}
+h1 {
+
+ padding:10px;
+ background:#000000;
+ color:#ffffff; 
+}
+h2 {
+     color:#039be5; 
+}
+
+/*---------------------------*/
+/* Read Users */
+/*---------------------------*/
+#usuario-lista {
+ margin:0;
+ padding:0;
+ width:25%;
+ margin-left:25%;
+ margin-top: 5px;
+ float:left;
+
+ border:1px solid #039be5;
+ color:#039be5; 
+}
+
+#usuario-lista h2 {
+
+ padding:2px;
+ margin:0;
+ color:#039be5; ;
+}
+
+#usuario-lista li {
+ padding:5px 10px;
+ border-top:1px solid #4fc3fc;
+ cursor: pointer;
+ color:#039be5; ;
+ font-style: italic;
+ list-style: none ;
+}
+
+#usuario-lista li:hover {
+ background: #4fc3fc;
+}
+
+#usuario-detalhes {
+ float:left;
+ min-width:25%;
+ margin:5px;
+ min-margin-right:20%;
+ padding:10px;
+ border:1px solid #039be5;
+ color:#039be5;
+}
+
+
+
+/* Add User Module */
+#adicionar-usuario-modulo {
+    width:100%;
+    margin-bottom: 1px;
+    margin-top:10px;
+}
+
+#adicionar-usuario-modulo #abrir-adicionar-usuario-form-btn {
+    width:100%;
+    background: #039be5;
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 5px;
+
+}
+
+#adicionar-usuario-modulo form {
+    position: absolute;
+    padding: 10px;
+    width: 46%;
+    background-color: #000000;
+    border: 1px solid #039be5;
+    display: none;
+    color: #ffffff;
+    margin-top: 5px;
+    
+}
+
+#adicionar-usuario-modulo form input {
+    width: 97%;
+    margin: 2px 0;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#adicionar-usuario-modulo form button {
+    background: #039be5;
+    font-size: 1em;
+    padding: 0px 10px;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#adicionar-usuario-modulo:hover form {
+    display: block;
+}
+
+
+/*Edit*/
+
+#editar-usuario-modulo {
+   position: absolute;
+    padding: 10px;
+    width: 46%;
+    background-color: #000000;
+    border: 1px solid #039be5;
+    display: none;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+#usuario-lista li:hover ~ #editar-usuario-modulo {
+    width: 50%;
+    display: none;
+}
+
+#editar-usuario-modulo form input {
+    width: 97%;
+    margin: 2px 0;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#editar-usuario-modulo form button {
+   background: #039be5;
+    font-size: 1em;
+    padding: 0px 10px;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+}
+
